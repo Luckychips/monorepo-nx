@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@monorepo-nx-react/ui-shared": ["libs/ui-shared/src/index.ts"]
+      "@ui-shared": ["libs/ui-shared/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
