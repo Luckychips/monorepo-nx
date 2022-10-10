@@ -1,6 +1,8 @@
 import styled from '@emotion/styled';
+import { Card, Button } from 'tabler-react';
+import { Welcome } from '@ui-shared';
 import NxWelcome from './nx-welcome';
-import { UiShared } from '@ui-shared';
+import "tabler-react/dist/Tabler.css";
 
 const StyledApp = styled.div`
   // Your style here
@@ -10,7 +12,15 @@ export function App() {
   return (
     <StyledApp>
       <NxWelcome title="backoffice-web" />
-      <UiShared />
+      <Card>
+        <Card.Header>
+          <Card.Title>Card Title</Card.Title>
+        </Card.Header>
+        <Card.Body>
+          <Button color="primary">A Button</Button>
+        </Card.Body>
+      </Card>
+      <Welcome />
     </StyledApp>
   );
 }
